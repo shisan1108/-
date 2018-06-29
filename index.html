@@ -1,0 +1,617 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>彭廷凤的个人网站</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- //end-smoth-scrolling -->
+    <!-- animated-css -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/audio.css">
+    <!-- Demo styles -->
+    <style>
+       /* body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }*/
+
+        #banner {
+            width: 100%;
+            height: 488px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .swiper-container {
+            width: 1750px;
+						/*width: 130%;*/
+            height: 523px;
+            position: absolute;
+            left: -875px;
+            margin-left: 50%;
+        }
+
+        .swiper-slide .detail {
+            height: 90px;
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: #fff;
+            opacity: 0;
+            transition: opacity .3s .3s;
+        }
+
+        .swiper-slide-active .detail {
+            opacity: 1;
+        }
+
+        .swiper-slide .detail h3 {
+            width: 950px;
+            margin: 15px auto 0;
+        }
+
+        .swiper-slide .detail p {
+            width: 950px;
+            margin: 5px auto 0;
+        }
+
+        .swiper-slide .detail p span {
+            width: 650px;
+            display: block;
+        }
+        /**/
+
+        .effect1 img {
+            transform: scale(1.25, 1.25) translate(10%, 10%);
+            transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            /*tr     =    (sc-1)/2sc*100%              */
+            /* --1.25       0.25/2.5*100%=10%          */
+        }
+
+        .leftUp img {
+            -webkit-animation-name: leftUp;
+            animation-name: leftUp;
+        }
+
+        @-webkit-keyframes leftUp {
+            0% {
+                transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(-4.545%, -4.545%);
+            }
+        }
+
+        @keyframes leftUp {
+            0% {
+                transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(-4.545%, -4.545%);
+            }
+        }
+
+        .moveRight img {
+            -webkit-animation-name: moveRight;
+            animation-name: moveRight;
+        }
+
+        @-webkit-keyframes moveRight {
+            0% {
+                transform: scale(1.1, 1.1) translate(-4.545%, 0);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(4.545%, 0);
+            }
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: scale(1.1, 1.1) translate(-4.545%, 0);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(4.545%, 0);
+            }
+        }
+
+        .moveDown img {
+            -webkit-animation-name: moveDown;
+            animation-name: moveDown;
+        }
+
+        @-webkit-keyframes moveDown {
+            0% {
+                transform: scale(1.1, 1.1) translate(0, -4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(0, 4.545%);
+            }
+        }
+
+        @keyframes moveDown {
+            0% {
+                transform: scale(1.1, 1.1) translate(0, -4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(0, 4.545%);
+            }
+        }
+
+        .centerBig img {
+            -webkit-animation-name: centerBig;
+            animation-name: centerBig;
+        }
+
+        @-webkit-keyframes centerBig {
+            100% {
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        @keyframes centerBig {
+            100% {
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        .rightDownBig img {
+            -webkit-animation-name: rightDownBig;
+            animation-name: rightDownBig;
+        }
+
+        @-webkit-keyframes rightDownBig {
+            100% {
+                transform: scale(1.1, 1.1) translate(4%, 4%);
+            }
+        }
+
+        @keyframes rightDownBig {
+            100% {
+                transform: scale(1.1, 1.1) translate(4%, 4%);
+            }
+        }
+
+        .swiper-slide img {
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        .swiper-pagination {
+            bottom: 35px;
+            right: 250px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            margin: 0 5px;
+        }
+    </style>
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- animated-css -->
+    <script src="js/modernizr.custom.97074.js"></script>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+
+    <!---pop-up-box---->
+    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+    <!---//pop-up-box---->
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--<script src="/demos/googlegg.js"></script>
+		<audio src="vido/2.m4a" autoplay="autoplay" id="audio_play"  loop="1" hidden="true"></audio>-->
+		<!--<audio src="vido/01.m4a" autoplay="autoplay" id="audio_play"  loop="1" hidden="true"></audio>-->
+    <!--<audio src="vido/2.m4a" autoplay="autoplay" loop="-1" hidden="true"></audio>-->
+
+    <div id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide rightDownBig">
+                    <img src="images/o1.png" />
+                    <div class="detail">
+                        <h3>执子之手</h3>
+                        <p>
+                            <span>手拉手我们十指相牵，手拉手我们心心相印，风里雨里我们要一起相守一辈子</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/o2.png" />
+                    <div class="detail">
+                        <h3>幸福or最美的期待</h3>
+                        <p>
+                            <span>心情像初升的太阳，做他最美的新娘</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/o3.png" />
+                    <div class="detail">
+                        <h3>爱的味道</h3>
+                        <p>
+                            <span>空气中弥漫着幸福的气味，却抵不过你抱着我，而我闻着你身上独有的味道 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/o4.png" />
+                    <div class="detail">
+                        <h3>家是永恒</h3>
+                        <p>
+                            <span>谢谢你给我一个家，家是我心中永远不熄灭的灯</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        trList = ['leftUp', 'moveRight', 'moveDown', 'centerBig', 'rightDownBig'];
+        var swiper = new Swiper('.swiper-container', {
+            speed: 500,
+            autoplay: 4400,
+            autoplayDisableOnInteraction: false,
+            effect: 'fade',
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            onSlideChangeStart: function (swiper) {
+                nextSlide = swiper.slides.eq(swiper.activeIndex);
+                nextSlide.addClass(trList[Math.floor(Math.random() * 5)]);
+            },
+            onSlideChangeEnd: function (swiper) {
+                prevSlide = swiper.slides[swiper.previousIndex];
+                prevSlide.className = "swiper-slide";
+            },
+        });
+    </script>
+<a  href="index.html"><h1>Playe</h1></a>  
+    <div class="who-we-are agile">
+        <div class="container">
+            <div class="who-we-are-main  w3">
+							 
+               <div class="who-we-images">
+                    <div class="who-we-left wow bounceInLeft" data-wow-delay="0.3s">
+                        <div class="who-we-img1">
+                            <a href="images/02.png" class="b-link-stripe b-animate-go  swipebox  mask" title="嫁给爱情的模样">
+                                <img src="images/02.png" alt="" class="img-responsive zoom-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="who-we-right wow bounceInRight" data-wow-delay="0.3s">
+                        <div class="who-we-img1">
+                            <a href="images/03.png" class="b-link-stripe b-animate-go  swipebox  mask" title="不忘初心">
+                                <img src="images/03.png" alt="" class="img-responsive zoom-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <h3> 死生契阔，与子成说。执子之手，与子偕老。</h3>
+                <p>回到生命的最初，你是我唯一的选择，多了单纯少了故事，拥有你就是我最大的满足。</p>
+                <p>我想在五十年之后，我一定还是像现在一样爱你。</p>
+                <p>缘是浪漫的相遇，瞬间让你我的心化为永恒！</p>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="gallery agileinfo">
+        <div class="container">
+            <div class="gallery-top heading">
+                <h2>My family and friends</h2>
+            </div>
+            <section>
+                <ul id="da-thumbs" class="da-thumbs w3layouts">
+                    <li>
+                        <a href="images/a1.JPG" class="b-link-stripe b-animate-go  swipebox" title="Image Title">
+                            <img src="images/a1.JPG" alt="" class="img-responsive">
+                            <div>
+                                <h5>妹妹</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/a5.png" class="b-link-stripe b-animate-go  swipebox  w3ls" title="Image Title">
+                            <img src="images/a5.png" alt="">
+                            <div>
+                                <h5>爸爸</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/a6.png" class="b-link-stripe b-animate-go  swipebox" title="Image Title">
+                            <img src="images/a6.png" alt="">
+                            <div>
+                                <h5>妈妈</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/a2.png" class="b-link-stripe b-animate-go  swipebox w3l" title="Image Title">
+                            <img src="images/a2.png" alt="">
+                            <div>
+                                <h5>朋友</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/a3.png" class="b-link-stripe b-animate-go  swipebox agileits" title="Image Title">
+                            <img src="images/a3.png" alt="">
+                            <div>
+                                <h5>朋友</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/a4.png" class="b-link-stripe b-animate-go  swipebox agileinfo" title="Image Title">
+                            <img src="images/a4.png" alt="">
+                            <div>
+                                <h5>朋友</h5>
+                                <span>The only you in the world, this life is good to have you</span>
+                            </div>
+                        </a>
+                    </li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </section>
+
+            <script type="text/javascript">
+                $(function () {
+
+                    $(' #da-thumbs > li ').each(function () {
+                        $(this).hoverdir();
+                    });
+
+                });
+            </script>
+        </div>
+    </div>
+
+
+
+
+    <div class="why-us agileinfo">
+        <div class="container">
+            <div class="why-us-main">
+                <h3>Crystalized Love</h3>
+                <div class="why-us-block wow bounceIn" data-wow-delay="0.4s">
+                    <div class="why-us-img1">
+                        <a href="images/001.png" class="b-link-stripe b-animate-go  swipebox  mask" title="baby周梦棉">
+                            <img src="images/001.png" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <h4>You Are My Angel</h4>
+                    <p>感谢你，宝贝。因为你，花朵开放，果实芳香，随你而来的满天希望！</p>
+                </div>
+                <div class="why-us-block agileinfo wow bounceIn" data-wow-delay="0.4s">
+                    <div class="why-us-img1">
+                        <a href="images/002.png" class="b-link-stripe b-animate-go  swipebox  mask" title="baby周梦棉">
+                            <img src="images/002.png" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <h4>You Are My Angel</h4>
+                    <p>学好一样东西并不容易，我们理解你，Baby，加油。</p>
+                </div>
+                <div class="why-us-block no-mar wow bounceIn" data-wow-delay="0.4s">
+                    <div class="why-us-img1">
+                        <a href="images/003.png" class="b-link-stripe b-animate-go  swipebox  mask" title="baby周梦棉">
+                            <img src="images/003.png" alt="" class="img-responsive zoom-img">
+                        </a>
+                    </div>
+                    <h4>You Are My Angel</h4>
+                    <p>祝你快快成长，永远都可以用你可爱的微笑，感染身边的每个人！</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation-JavaScript -->
+    <script type="text/javascript" src="js/jquery-func.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".btn-nav").on("click tap", function () {
+                $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+                $(this).toggleClass("animated");
+            });
+        });
+    </script>
+		
+		
+		<div class="audio-box">
+				<div class="audio-container">
+					<div class="audio-view">
+						<div class="audio-cover" ></div>
+						<div class="audio-body">
+							<h3 class="audio-title">未知歌曲</h3>
+							<div class="audio-backs">
+								<div class="audio-this-time">00:00</div>
+								<div class="audio-count-time">00:00</div>
+								<div class="audio-setbacks">
+									<i class="audio-this-setbacks">
+										<span class="audio-backs-btn"></span>
+									</i>
+									<span class="audio-cache-setbacks">
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="audio-btn">
+							<div class="audio-select">
+								<div class="audio-prev"></div>
+								<div class="audio-play"></div>
+								<div class="audio-next"></div>
+								<div class="audio-menu"></div>
+								<div class="audio-volume"></div>
+							</div>
+							<div class="audio-set-volume">
+								<div class="volume-box">
+									<i><span></span></i>
+								</div>
+							</div>
+							<!--<div class="audio-list">
+								<div class="audio-list-head">
+									<p>歌单</p>
+									<span class="menu-close">关闭</span>
+								</div>
+								<ul class="audio-inline">
+								</ul>
+							</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/audio.js"></script>
+		<script type="text/javascript">
+		$(function(){
+		
+			var song = [
+				{
+					'cover' : 'images/aud1.png',
+					'src' : 'vido/2.m4a',
+					'title' : '学猫叫 　　　　　　　　　　　　　　　　　　　　 Zhou'
+				},
+				{
+					'cover' : 'images/aud2.png',
+					'src' : 'vido/01.m4a',
+					'title' : '123木头人 　　　　　　　　　　　　　　　　　　　　 Zhou'
+				},
+				{
+					'cover' : 'images/aud4.png',
+					'src' : 'vido/3.m4a',
+					'title' : '权御天下 　　　　　　　　　　　　　　　　　　　　 Zhou'
+				},
+				{
+					'cover' : 'images/aud3.png',
+					'src' : 'vido/4.m4a',
+					'title' : 'That Girl 　　　　　　　　　　　　　　　　　　　　 Zhou'
+				}
+				
+			];
+		
+			var audioFn = audioPlay({
+				song : song,
+				autoPlay : false  //是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
+			});
+		
+			/* 向歌单中添加新曲目，第二个参数true为新增后立即播放该曲目，false则不播放 */
+		// 	audioFn.newSong({
+		// 		'cover' : 'images/cover5.jpg',
+		// 		'src' : 'http://webmp3-1253691995.costj.myqcloud.com/audio/baab.mp3',
+		// 		'title' : 'B.A.A.B'
+		// 	},false);
+		
+			/* 暂停播放 */
+			//audioFn.stopAudio();
+		
+			/* 开启播放 */
+			// audioFn.playAudio();
+		
+			/* 选择歌单中索引为3的曲目(索引是从0开始的)，第二个参数true立即播放该曲目，false则不播放 */
+			//audioFn.selectMenu(3,true);
+		
+			/* 查看歌单中的曲目 */
+			//console.log(audioFn.song);
+		
+			/* 当前播放曲目的对象 */
+			//console.log(audioFn.audio);
+		});
+		
+		</script>
+		
+		
+
+</body>
+
+</html>
